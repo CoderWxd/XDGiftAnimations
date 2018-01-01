@@ -1,0 +1,72 @@
+//
+//  PrefixHeader.pch
+//  飞升上神
+//
+//  Created by 王晓栋 on 2017/6/25.
+//  Copyright © 2017年 com.qinqin.www. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIView+ESShortcut.h"
+#import "LuxuManager.h"
+#import <ESFramework/ESFramework.h>
+#import <ESFramework/ESDefines.h>
+#import <ESFramework/ESFrameworkCore.h>
+
+#define SoaringGod_gif 1000 //飞升上神
+#define Ring_gif 1001 //戒指
+#define Chestnu_gif 1002 //栗子
+#define CottonCa_gif 1003 //棉花糖
+#define FerrisWheel_gif 1003 // 摩天轮
+#define Cream_gif 1005 //冰淇淋
+#define Necklace_gif 1006 // 项链
+#define LoveLoll_gif 1007 //  爱心棒棒糖
+#define ME_Chestnut_gif 1008 //  ME_栗子
+#define ME_Perfume_gif 1009 //  me_香水
+#define ME_CottonCaV_gif 1010 //  ME_棉花糖
+#define ME_Necklace_gif 1011 //  ME_项链
+#define Balloon_gif 1012 // 气球 520
+#define MapWo_gif 1013 //  ME_花仙子礼服
+#define CrystalBall_gif 1014 //  梦幻水晶球
+#define Meteor_gif 1015 //流星雨
+#define BlueLove_gif 1016 //蓝色之恋
+#define MerryChristmas_gif 1017 //圣诞礼物
+#define FlyWing_gif 1018 //比翼双飞
+#define Perfume_gif 1019  //  香水
+#define BeautFaery_gif 1020 //  花仙子礼服
+#define Angel_gif 1021 //浮空岛
+#define BoatView_gif 1022 //游艇
+#define CastleView_gif 1023 //城堡
+#define CrownView_gif 1024 // 冠
+#define CrystalShoesView_gif 1025 // 水晶鞋
+#define DressView_gif 1026   // 婚纱
+#define FireworksView_gif 1027   // 烟花
+#define FlowerView_gif 1028 // 花
+#define HappyYear_gif 1029 //新年快乐
+
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define  SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+
+
+#define const_explosion_time 1.0
+#define weak(obj) __weak typeof(obj) _weak##obj = obj;
+#define strong(obj) __strong typeof(obj) _strong##obj = obj;
+
+
+#define ESWeak_(var, weakVar)                   __weak __typeof(&*var) weakVar = var;
+#define ESWeak(var)                             ESWeak_(var, weak_##var);
+#define ESWeakSelf                              ESWeak(self);
+
+#define ESStrong_DoNotCheckNil(weakVar, var)    __typeof(&*weakVar) var = weakVar;
+#define ESStrong_(weakVar, var)                 ESStrong_DoNotCheckNil(weakVar, var); if (!var) return;
+#define ESStrong(var)                           ESStrong_(weak_##var, _##var);
+#define ESStrongSelf                            ESStrong(self);
+
+
+
+#endif /* PrefixHeader_pch */

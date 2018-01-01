@@ -1,0 +1,21 @@
+PODS:
+  - ESFramework (2.4.13):
+    - ESFramework/Core (= 2.4.13)
+    - ESFramework/UIKit (= 2.4.13)
+  - ESFramework/Core (2.4.13)
+  - ESFramework/UIKit (2.4.13):
+    - ESFramework/Core
+
+DEPENDENCIES:
+  - ESFramework (= 2.4.13)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ESFramework
+
+SPEC CHECKSUMS:
+  ESFramework: 700a40439bcc0b296fa70ac8765b409b8157044f
+
+PODFILE CHECKSUM: 1e126d3a54562b5db602c5ef4784ca9dbbefb8c8
+
+COCOAPODS: 1.5.0
