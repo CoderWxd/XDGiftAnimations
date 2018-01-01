@@ -38,12 +38,13 @@
 
 #define item_width (ScreenWidth - 5 * 10)/4
 
+
+#pragma mark  view
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
-    
-    
-    
+
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
