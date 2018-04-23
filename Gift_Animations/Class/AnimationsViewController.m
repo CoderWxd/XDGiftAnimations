@@ -14,6 +14,7 @@
 #import "HappyYearView.h"
 #import "AnimationBalloonView.h"
 #import <CoreText/CoreText.h>
+#import "AnimationBeforeflowerView.h"
 
 @interface AnimationsViewController ()<CAAnimationDelegate>
 {
@@ -23,6 +24,7 @@
     HappyYearView *_happyYearView;
     NSMutableArray *dataArr;
     NSMutableArray *numArr;
+    AnimationBeforeflowerView *_beforeflowerView;
 }
 @property(nonatomic,strong)UIImageView *mAwardNormalView;
 @end
@@ -38,52 +40,25 @@
 
 #define item_width (ScreenWidth - 5 * 10)/4
 
-
 #pragma mark  view
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
-
+    
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.mAwardNormalView removeFromSuperview];
-    self.mAwardNormalView = nil;
-    self.mAwardNormalView = [[UIImageView alloc] initWithFrame:CGRectMake(15, SCREEN_HEIGHT/2 + 50, 120, 41)];
-    self.mAwardNormalView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:self.mAwardNormalView];
-    self.mAwardNormalView.image = [UIImage imageNamed:@"blueLove_love"];
-    self.mAwardNormalView.hidden = YES;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.mAwardNormalView.hidden = NO;
-        [self startBigAnimation];
-        [UIView animateWithDuration:0.5 delay:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
-            self.mAwardNormalView.transform = CGAffineTransformMakeScale(1.1, 1.1);
-        } completion:^(BOOL finished) {
-            
-        }];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [UIView animateWithDuration:1 animations:^{
-                self.mAwardNormalView.alpha = 0;
-            } completion:^(BOOL finished) {
-                [self.mAwardNormalView removeFromSuperview];
-            }];
-        });
-    });
-
-
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor blackColor];
-
-//    return;
+ 
     UIView *animationView = [[UIView alloc] initWithFrame:self.view.bounds];
     animationView = [[UIView alloc] initWithFrame:self.view.bounds];
     animationView.backgroundColor = [UIColor clearColor];
@@ -93,12 +68,7 @@
     _btnSup = [[UIView alloc] initWithFrame:self.view.bounds];
     _btnSup.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_btnSup];
-    
-    //    [LuxuManager sharedManager].livingView = _btnSup;
-    
-    
     isLivingShowState = YES;
-    
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gestureRecognizer:)];
     [self.view addGestureRecognizer:panGestureRecognizer];
     
@@ -132,6 +102,7 @@
                        @"烟花",
                        @"花",
                        @"新年快乐",
+                       @"花前月下",
                        @"退出按钮"];
     
     
@@ -156,8 +127,6 @@
     }
 }
 - (void)button:(UIButton *)button{
-    
-    
     NSString *git_id = [NSString stringWithFormat:@"%zd",button.tag];
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict setValue:git_id forKey:@"gif_id"];
@@ -205,7 +174,6 @@
         if (translation.x > 0) {
             return;
         }
-        
         if (UIGestureRecognizerStateEnded == recognizer.state || UIGestureRecognizerStateCancelled == recognizer.state) {
             if (fabs(translation.x) >= SHOW_DISTANCE) {
                 [UIView animateWithDuration:0.2 animations:^{
@@ -228,40 +196,33 @@
             [recognizer translationInView:recognizer.view];
         }
     }
-    
-    
 }
 
 - (void)startAnimation{
-    
-
-CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(3, 3, 13)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(2, 2, 12)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 10)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(.3, .3, 5)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.3, 1.3, 2)],
-                     [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)]];
-animation.duration = .5;
-animation.removedOnCompletion = YES;
-[animation setValue:@"first" forKey:@"animationName"];
-[self.mAwardNormalView.layer addAnimation:animation forKey:@"animationName"];
-    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(3, 3, 13)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(2, 2, 12)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 10)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(.3, .3, 5)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.3, 1.3, 2)],
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)]];
+    animation.duration = .5;
+    animation.removedOnCompletion = YES;
+    [animation setValue:@"first" forKey:@"animationName"];
+    [self.mAwardNormalView.layer addAnimation:animation forKey:@"animationName"];
 }
 
 - (void)startBigAnimation{
-    
-    
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(6, 6, 13)],
                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(5.5, 5.5, 12)],
                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(4.4, 4.4, 10)],
                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(3.3, 3.3, 5)],
                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(2.2, 2.2, 3)],
-                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(2.2, 2.2, 3)],
-
-                          [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)]];
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(2.2, 2.2, 3)],
+                         
+                         [NSValue valueWithCATransform3D:CATransform3DMakeScale(1, 1, 2)]];
     animation.duration = .5;
     animation.removedOnCompletion = YES;
     [animation setValue:@"first" forKey:@"animationName"];

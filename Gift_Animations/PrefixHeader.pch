@@ -46,6 +46,7 @@
 #define FireworksView_gif 1027   // 烟花
 #define FlowerView_gif 1028 // 花
 #define HappyYear_gif 1029 //新年快乐
+#define BEFORE_FLOWER_GIF 1030// 花前月下
 
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width

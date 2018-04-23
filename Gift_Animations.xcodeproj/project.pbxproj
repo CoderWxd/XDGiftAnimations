@@ -962,13 +962,15 @@
 		C5143DCC1FF9BBBA00C16EB5 /* AnimationRingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A051FF9BBB700C16EB5 /* AnimationRingView.m */; };
 		C5143DCD1FF9BBBA00C16EB5 /* CottonCaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A071FF9BBB700C16EB5 /* CottonCaView.m */; };
 		C5143DCE1FF9BBBA00C16EB5 /* HappyYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A091FF9BBB700C16EB5 /* HappyYearView.m */; };
-		C5143DCF1FF9BBBA00C16EB5 /* LuxuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A0B1FF9BBB700C16EB5 /* LuxuManager.m */; };
 		C5143DD01FF9BBBA00C16EB5 /* NecklaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A0D1FF9BBB700C16EB5 /* NecklaceView.m */; };
 		C5143DD11FF9BBBA00C16EB5 /* PerfumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A0F1FF9BBB700C16EB5 /* PerfumeView.m */; };
 		C5143DD21FF9BBBA00C16EB5 /* SoaringGodOnAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A111FF9BBB700C16EB5 /* SoaringGodOnAnimation.m */; };
 		C5143DD31FF9BBBA00C16EB5 /* AnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A131FF9BBB700C16EB5 /* AnimationsViewController.m */; };
 		C5143DD41FF9BBBA00C16EB5 /* CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A151FF9BBB700C16EB5 /* CATransitionViewController.m */; };
 		C5143DD51FF9BBBA00C16EB5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5143A171FF9BBB700C16EB5 /* RootViewController.m */; };
+		C59F0AC92086EEB300BC7065 /* image in Resources */ = {isa = PBXBuildFile; fileRef = C59F0AC82086EEB300BC7065 /* image */; };
+		C5B0DFBD208D76DA00D7FAC6 /* LuxuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */; };
+		C5B318442086EFE200208F09 /* AnimationBeforeflowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */; };
 		E8F808DEA8C0E4458D108F83 /* libPods-Gift_Animations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D3405DC38D386813E20502 /* libPods-Gift_Animations.a */; };
 /* End PBXBuildFile section */
 
@@ -1968,8 +1970,6 @@
 		C5143A071FF9BBB700C16EB5 /* CottonCaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CottonCaView.m; sourceTree = "<group>"; };
 		C5143A081FF9BBB700C16EB5 /* HappyYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyYearView.h; sourceTree = "<group>"; };
 		C5143A091FF9BBB700C16EB5 /* HappyYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappyYearView.m; sourceTree = "<group>"; };
-		C5143A0A1FF9BBB700C16EB5 /* LuxuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuxuManager.h; sourceTree = "<group>"; };
-		C5143A0B1FF9BBB700C16EB5 /* LuxuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuxuManager.m; sourceTree = "<group>"; };
 		C5143A0C1FF9BBB700C16EB5 /* NecklaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NecklaceView.h; sourceTree = "<group>"; };
 		C5143A0D1FF9BBB700C16EB5 /* NecklaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NecklaceView.m; sourceTree = "<group>"; };
 		C5143A0E1FF9BBB700C16EB5 /* PerfumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfumeView.h; sourceTree = "<group>"; };
@@ -1983,6 +1983,11 @@
 		C5143A161FF9BBB700C16EB5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C5143A171FF9BBB700C16EB5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		C5143DD71FF9BC9D00C16EB5 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C59F0AC82086EEB300BC7065 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		C5B0DFBB208D76D900D7FAC6 /* LuxuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuxuManager.h; path = Animations/LuxuManager.h; sourceTree = "<group>"; };
+		C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuxuManager.m; path = Animations/LuxuManager.m; sourceTree = "<group>"; };
+		C5B318422086EFE200208F09 /* AnimationBeforeflowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationBeforeflowerView.h; sourceTree = "<group>"; };
+		C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationBeforeflowerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2035,6 +2040,7 @@
 				C514357D1FF9B9B600C16EB5 /* ViewController.m */,
 				C5143DD71FF9BC9D00C16EB5 /* PrefixHeader.pch */,
 				C514357F1FF9B9B600C16EB5 /* Main.storyboard */,
+				C59F0AC82086EEB300BC7065 /* image */,
 				C51435821FF9B9B600C16EB5 /* Assets.xcassets */,
 				C51435841FF9B9B600C16EB5 /* LaunchScreen.storyboard */,
 				C51435871FF9B9B600C16EB5 /* Info.plist */,
@@ -2988,6 +2994,8 @@
 		C51439D21FF9BBB700C16EB5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C5B0DFBB208D76D900D7FAC6 /* LuxuManager.h */,
+				C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */,
 				C51439D31FF9BBB700C16EB5 /* Animations */,
 				C5143A121FF9BBB700C16EB5 /* AnimationsViewController.h */,
 				C5143A131FF9BBB700C16EB5 /* AnimationsViewController.m */,
@@ -3056,14 +3064,14 @@
 				C5143A071FF9BBB700C16EB5 /* CottonCaView.m */,
 				C5143A081FF9BBB700C16EB5 /* HappyYearView.h */,
 				C5143A091FF9BBB700C16EB5 /* HappyYearView.m */,
-				C5143A0A1FF9BBB700C16EB5 /* LuxuManager.h */,
-				C5143A0B1FF9BBB700C16EB5 /* LuxuManager.m */,
 				C5143A0C1FF9BBB700C16EB5 /* NecklaceView.h */,
 				C5143A0D1FF9BBB700C16EB5 /* NecklaceView.m */,
 				C5143A0E1FF9BBB700C16EB5 /* PerfumeView.h */,
 				C5143A0F1FF9BBB700C16EB5 /* PerfumeView.m */,
 				C5143A101FF9BBB700C16EB5 /* SoaringGodOnAnimation.h */,
 				C5143A111FF9BBB700C16EB5 /* SoaringGodOnAnimation.m */,
+				C5B318422086EFE200208F09 /* AnimationBeforeflowerView.h */,
+				C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -3514,6 +3522,7 @@
 				C5143D1F1FF9BBB900C16EB5 /* perfume69.png in Resources */,
 				C5143B8D1FF9BBB900C16EB5 /* gift_marry_heart4.png in Resources */,
 				C5143C191FF9BBB900C16EB5 /* loveloll77.png in Resources */,
+				C59F0AC92086EEB300BC7065 /* image in Resources */,
 				C5143D081FF9BBB900C16EB5 /* perfume48.png in Resources */,
 				C5143A2E1FF9BBB800C16EB5 /* beautFaery_petals.png in Resources */,
 				C5143B6F1FF9BBB800C16EB5 /* gift_dress_bottom.png in Resources */,
@@ -4095,7 +4104,6 @@
 				C5143DC31FF9BBBA00C16EB5 /* AnimationFlowerView.m in Sources */,
 				C5143DBD1FF9BBBA00C16EB5 /* AnimationCrownView.m in Sources */,
 				C5143DBF1FF9BBBA00C16EB5 /* AnimationCrystalShoesView.m in Sources */,
-				C5143DCF1FF9BBBA00C16EB5 /* LuxuManager.m in Sources */,
 				C5143DD51FF9BBBA00C16EB5 /* RootViewController.m in Sources */,
 				C5143DB41FF9BBBA00C16EB5 /* AnimationAngelView.m in Sources */,
 				C5143DCB1FF9BBBA00C16EB5 /* AnimationPerfumeView.m in Sources */,
@@ -4110,11 +4118,13 @@
 				C5143DD21FF9BBBA00C16EB5 /* SoaringGodOnAnimation.m in Sources */,
 				C51435891FF9B9B600C16EB5 /* main.m in Sources */,
 				C5143DC01FF9BBBA00C16EB5 /* AnimationDressView.m in Sources */,
+				C5B0DFBD208D76DA00D7FAC6 /* LuxuManager.m in Sources */,
 				C5143DC11FF9BBBA00C16EB5 /* AnimationFerrisWheelView.m in Sources */,
 				C5143DB51FF9BBBA00C16EB5 /* AnimationBalloonView.m in Sources */,
 				C5143DBE1FF9BBBA00C16EB5 /* AnimationCrystalBallView.m in Sources */,
 				C5143DC71FF9BBBA00C16EB5 /* AnimationMapWoView.m in Sources */,
 				C5143DC51FF9BBBA00C16EB5 /* AnimationHeartView.m in Sources */,
+				C5B318442086EFE200208F09 /* AnimationBeforeflowerView.m in Sources */,
 				C5143DB81FF9BBBA00C16EB5 /* AnimationBoatView.m in Sources */,
 				C514357B1FF9B9B600C16EB5 /* AppDelegate.m in Sources */,
 				C5143DD01FF9BBBA00C16EB5 /* NecklaceView.m in Sources */,

@@ -127,9 +127,10 @@
                 }
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"
-                if (!__isJailBroken && 0 == system("ls")) {
-                        __isJailBroken = YES;
-                }
+            if (!__isJailBroken && 0 == popen("ls","r")) {
+                __isJailBroken = YES;
+            }
+
 #pragma clang diagnostic pop
         });
 #endif

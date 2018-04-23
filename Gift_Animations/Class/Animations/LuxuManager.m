@@ -38,6 +38,7 @@
 #import "AnimationFlowerView.h"
 #import "AnimationCastleView.h"
 #import "HappyYearView.h"
+#import "AnimationBeforeflowerView.h"
 
 @implementation LuxuManager
 
@@ -223,13 +224,13 @@ static id _manager;
             //新年快乐
             HappyYearView *angelView = [[HappyYearView alloc]initWithFrame:[UIScreen mainScreen].bounds];
             [_livingView addSubview:angelView];
+        }else if ([gif_id intValue] == BEFORE_FLOWER_GIF){
+            //花前月下
+            AnimationBeforeflowerView * beforeflowerView = [[AnimationBeforeflowerView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:beforeflowerView];
         }else{
-
             _isShowAnimation = NO;
-        }
-        }else{
-        _isShowAnimation = NO;
-        
+         }
     }
 }
 @end

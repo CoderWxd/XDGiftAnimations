@@ -223,10 +223,7 @@
     // 将粒子添加到粒子发射器上
     cAEmitterLayer.emitterCells = [NSArray arrayWithObject:emitterCell];
     [self.layer addSublayer:cAEmitterLayer];
-    
-    
-    
-}
+ }
 
 - (void)callBackManager{
     [LuxuManager sharedManager].isShowAnimation = NO;
