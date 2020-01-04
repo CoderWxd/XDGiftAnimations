@@ -68,7 +68,7 @@ static id _manager;
         _isShowAnimation = YES;
         NSDictionary *luxuDict  = [[LuxuManager sharedManager].luxuryArray objectAtIndex:0];
         [[LuxuManager sharedManager].luxuryArray removeObjectAtIndex:0];
-
+        
         NSString *gif_id = [luxuDict valueForKey:@"gif_id"];
         
         if ([gif_id intValue] == SoaringGod_gif) {
@@ -88,103 +88,91 @@ static id _manager;
             [_livingView addSubview:ringView];
         }else if ([gif_id intValue] == CottonCa_gif){
             //棉花糖
-                        AnimationCottonCaView *cottonCaView = [[AnimationCottonCaView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                        [_livingView addSubview:cottonCaView];
-
-            
+            AnimationCottonCaView *cottonCaView = [[AnimationCottonCaView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:cottonCaView];
         }else if ([gif_id intValue] == FerrisWheel_gif){
             // 摩天轮
-                    AnimationFerrisWheelView *ferrisWheelView = [[AnimationFerrisWheelView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:ferrisWheelView];
-            
-            
+            AnimationFerrisWheelView *ferrisWheelView = [[AnimationFerrisWheelView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:ferrisWheelView];
         }else if ([gif_id intValue] == Cream_gif){
             
             //冰淇淋
-                                AnimationCreamView *creamView = [[AnimationCreamView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                                [_livingView addSubview:creamView];
-
-            
+            AnimationCreamView *creamView = [[AnimationCreamView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:creamView];
         }else if ([gif_id intValue] == ME_Necklace_gif){
             // 项链
-            
-                    AnimationNecklaceView *creamView = [[AnimationNecklaceView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:creamView];
-
-            
+            AnimationNecklaceView *creamView = [[AnimationNecklaceView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:creamView];
         }else if ([gif_id intValue] == LoveLoll_gif){
-            
             //  爱心棒棒糖
-                AnimationLoveLollView *creamView = [[AnimationLoveLollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:creamView];
-
-            
+            AnimationLoveLollView *creamView = [[AnimationLoveLollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:creamView];
         }else if ([gif_id intValue] == Perfume_gif){
             //  香水 Perfume_gif
-                    AnimationPerfumeView *creamView = [[AnimationPerfumeView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:creamView];
-
+            AnimationPerfumeView *creamView = [[AnimationPerfumeView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:creamView];
+            
         }else if ([gif_id intValue] == ME_Chestnut_gif){
             //栗子
-                    AnimationChestnutView *ringView = [[AnimationChestnutView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:ringView];
-
+            AnimationChestnutView *ringView = [[AnimationChestnutView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:ringView];
+            
             
         }else if ([gif_id intValue] == ME_Perfume_gif){
             //  香水
-                PerfumeView *creamView = [[PerfumeView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:creamView];
+            PerfumeView *creamView = [[PerfumeView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:creamView];
             
         }else if ([gif_id intValue] == ME_CottonCaV_gif){
             //棉花糖
-                CottonCaView *cottonCaView = [[CottonCaView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:cottonCaView];
-
+            CottonCaView *cottonCaView = [[CottonCaView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:cottonCaView];
+            
         }else if ([gif_id intValue] == Necklace_gif){
             //项链
-                    NecklaceView *cottonCaView = [[NecklaceView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:cottonCaView];
+            NecklaceView *cottonCaView = [[NecklaceView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:cottonCaView];
         }else if ([gif_id intValue] == Balloon_gif){
             //气球 520
-                AnimationBalloonView *balloonView = [[AnimationBalloonView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:balloonView];
+            AnimationBalloonView *balloonView = [[AnimationBalloonView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:balloonView];
             
         }else if ([gif_id intValue] == MapWo_gif){
             
             //枫林晚
-                    AnimationMapWoView *mapWoView = [[AnimationMapWoView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                    [_livingView addSubview:mapWoView];
+            AnimationMapWoView *mapWoView = [[AnimationMapWoView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:mapWoView];
             
         }else if ([gif_id intValue] == FlyWing_gif){
             //比翼双飞
-                AnimationFlyWingView *flyWingView = [[AnimationFlyWingView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:flyWingView];
+            AnimationFlyWingView *flyWingView = [[AnimationFlyWingView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:flyWingView];
             
         }else if ([gif_id intValue] == BeautFaery_gif){
-            //  花仙子礼服 
-                AnimationBeautFaeryView *beautFaeryView = [[AnimationBeautFaeryView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:beautFaeryView];
-
+            //  花仙子礼服
+            AnimationBeautFaeryView *beautFaeryView = [[AnimationBeautFaeryView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:beautFaeryView];
+            
             
         }else if ([gif_id intValue] == CrystalBall_gif){
             //  梦幻水晶球
-                AnimationCrystalBallView *crystalBallView = [[AnimationCrystalBallView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:crystalBallView];
+            AnimationCrystalBallView *crystalBallView = [[AnimationCrystalBallView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:crystalBallView];
         }else if ([gif_id intValue] == Meteor_gif){
             //流星雨
-                AnimationMeteorView *meteorView = [[AnimationMeteorView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:meteorView];
+            AnimationMeteorView *meteorView = [[AnimationMeteorView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:meteorView];
             
         }else if ([gif_id intValue] == BlueLove_gif){
-      
+            
             //蓝色之恋
-                AnimationBlueLoveView *blueLoveView = [[AnimationBlueLoveView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:blueLoveView];
+            AnimationBlueLoveView *blueLoveView = [[AnimationBlueLoveView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:blueLoveView];
         }
         else if ([gif_id intValue] == MerryChristmas_gif){
             //圣诞礼物
-                AnimationMerryChristmasView *merryChristmasView = [[AnimationMerryChristmasView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-                [_livingView addSubview:merryChristmasView];
+            AnimationMerryChristmasView *merryChristmasView = [[AnimationMerryChristmasView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            [_livingView addSubview:merryChristmasView];
         } else if ([gif_id intValue] == Angel_gif){
             //浮空岛
             AnimationAngelView *angelView = [[AnimationAngelView alloc]initWithFrame:[UIScreen mainScreen].bounds];
@@ -230,7 +218,7 @@ static id _manager;
             [_livingView addSubview:beforeflowerView];
         }else{
             _isShowAnimation = NO;
-         }
+        }
     }
 }
 @end

@@ -131,6 +131,9 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict setValue:git_id forKey:@"gif_id"];
     [LuxuManager sharedManager].luxuryDict = dict;
+    
+    NSLog(@"luxuryDict>>>>>>>>>%@",dict);
+    
     if ([button.titleLabel.text isEqualToString: @"退出按钮"]) {
         [self.navigationController popViewControllerAnimated:YES];
     }
