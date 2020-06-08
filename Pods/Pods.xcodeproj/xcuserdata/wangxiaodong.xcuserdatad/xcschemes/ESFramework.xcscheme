@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9E070D77C634A0FA2F483A493E2D313"
+               BlueprintIdentifier = "18A4A1B84653112D804B36708E3F8EAD"
+               BuildableName = "libESFramework.a"
                BlueprintName = "ESFramework"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libESFramework.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

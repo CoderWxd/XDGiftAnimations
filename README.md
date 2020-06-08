@@ -1,2 +1,8 @@
-# Gift_Animations
-礼物动画.
+## Gift_Animations
+```直播礼物动画.```
+```update
+1. 整理文件夹
+```
+
+## Installation
+git clone 

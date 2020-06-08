@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA9BF219B3C12F3D7C91F4C71B2C29A7"
+               BlueprintIdentifier = "3B0125E55BA97AABE5EBE2428075E034"
+               BuildableName = "libPods-Gift_Animations.a"
                BlueprintName = "Pods-Gift_Animations"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-Gift_Animations.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -11,19 +11,6 @@
 #import "LuxuManager.h"
 
 #define const_explosion_time 5.0
-#define weak(obj) __weak typeof(obj) _weak##obj = obj;
-#define strong(obj) __strong typeof(obj) _strong##obj = obj;
-
-
-#define ESWeak_(var, weakVar)                   __weak __typeof(&*var) weakVar = var;
-#define ESWeak(var)                             ESWeak_(var, weak_##var);
-#define ESWeakSelf                              ESWeak(self);
-
-#define ESStrong_DoNotCheckNil(weakVar, var)    __typeof(&*weakVar) var = weakVar;
-#define ESStrong_(weakVar, var)                 ESStrong_DoNotCheckNil(weakVar, var); if (!var) return;
-#define ESStrong(var)                           ESStrong_(weak_##var, _##var);
-#define ESStrongSelf                            ESStrong(self);
-
 @interface SoaringGodOnAnimation()<CAAnimationDelegate>
 {
    

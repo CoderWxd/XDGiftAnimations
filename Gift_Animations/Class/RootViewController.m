@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "AnimationsViewController.h"
 #import "CATransitionViewController.h"
+#import "TestViewController.h"
+
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView * tableView;
 @property(nonatomic,strong)NSMutableArray *dataSource;
@@ -28,8 +30,10 @@
     [self.view addSubview:self.tableView];
     
     self.dataSource = [NSMutableArray arrayWithObjects:
-                       @"礼物动画",
+                       @"基本动画",
                        @"转场动画",
+                       @"直播礼物动画",
+                       @"测试动画",
                        nil];
     [self.tableView reloadData];
     [self testUrl];
@@ -90,11 +94,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *text = [self.dataSource objectAtIndex:indexPath.row];
     if ([text isEqualToString:@"礼物动画"]) {
-        AnimationsViewController *openCellVc = [[AnimationsViewController alloc] init];
-        [self.navigationController pushViewController:openCellVc animated:YES];
+        AnimationsViewController *vc = [[AnimationsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([text isEqualToString:@"转场动画"]){
-        CATransitionViewController *cATransitionVc = [[CATransitionViewController alloc] init];
-        [self.navigationController pushViewController:cATransitionVc animated:YES];
+        CATransitionViewController *vc = [[CATransitionViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([text isEqualToString:@"测试动画"]){
+        TestViewController *vc = [[TestViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }

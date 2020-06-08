@@ -971,6 +971,8 @@
 		C59F0AC92086EEB300BC7065 /* image in Resources */ = {isa = PBXBuildFile; fileRef = C59F0AC82086EEB300BC7065 /* image */; };
 		C5B0DFBD208D76DA00D7FAC6 /* LuxuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */; };
 		C5B318442086EFE200208F09 /* AnimationBeforeflowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */; };
+		C5DE784D248E37E300285A62 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DE784C248E37E300285A62 /* TestViewController.m */; };
+		C5DE784F248E392100285A62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5DE784E248E392000285A62 /* README.md */; };
 		E8F808DEA8C0E4458D108F83 /* libPods-Gift_Animations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D3405DC38D386813E20502 /* libPods-Gift_Animations.a */; };
 /* End PBXBuildFile section */
 
@@ -1988,6 +1990,9 @@
 		C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuxuManager.m; path = Animations/LuxuManager.m; sourceTree = "<group>"; };
 		C5B318422086EFE200208F09 /* AnimationBeforeflowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationBeforeflowerView.h; sourceTree = "<group>"; };
 		C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationBeforeflowerView.m; sourceTree = "<group>"; };
+		C5DE784B248E37E300285A62 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		C5DE784C248E37E300285A62 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		C5DE784E248E392000285A62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2013,6 +2018,7 @@
 		C514356D1FF9B9B600C16EB5 = {
 			isa = PBXGroup;
 			children = (
+				C5DE784E248E392000285A62 /* README.md */,
 				C51435781FF9B9B600C16EB5 /* Gift_Animations */,
 				C51435771FF9B9B600C16EB5 /* Products */,
 				DAC73FF71BC822377847217C /* Pods */,
@@ -2031,20 +2037,11 @@
 		C51435781FF9B9B600C16EB5 /* Gift_Animations */ = {
 			isa = PBXGroup;
 			children = (
+				C5143DD71FF9BC9D00C16EB5 /* PrefixHeader.pch */,
+				C5DE784A248E362D00285A62 /* Default */,
 				C51436301FF9BBAF00C16EB5 /* categorys */,
 				C514363A1FF9BBAF00C16EB5 /* images */,
 				C51439D21FF9BBB700C16EB5 /* Class */,
-				C51435791FF9B9B600C16EB5 /* AppDelegate.h */,
-				C514357A1FF9B9B600C16EB5 /* AppDelegate.m */,
-				C514357C1FF9B9B600C16EB5 /* ViewController.h */,
-				C514357D1FF9B9B600C16EB5 /* ViewController.m */,
-				C5143DD71FF9BC9D00C16EB5 /* PrefixHeader.pch */,
-				C514357F1FF9B9B600C16EB5 /* Main.storyboard */,
-				C59F0AC82086EEB300BC7065 /* image */,
-				C51435821FF9B9B600C16EB5 /* Assets.xcassets */,
-				C51435841FF9B9B600C16EB5 /* LaunchScreen.storyboard */,
-				C51435871FF9B9B600C16EB5 /* Info.plist */,
-				C51435881FF9B9B600C16EB5 /* main.m */,
 			);
 			path = Gift_Animations;
 			sourceTree = "<group>";
@@ -2994,13 +2991,15 @@
 		C51439D21FF9BBB700C16EB5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C51439D31FF9BBB700C16EB5 /* Animations */,
 				C5B0DFBB208D76D900D7FAC6 /* LuxuManager.h */,
 				C5B0DFBC208D76DA00D7FAC6 /* LuxuManager.m */,
-				C51439D31FF9BBB700C16EB5 /* Animations */,
 				C5143A121FF9BBB700C16EB5 /* AnimationsViewController.h */,
 				C5143A131FF9BBB700C16EB5 /* AnimationsViewController.m */,
 				C5143A141FF9BBB700C16EB5 /* CATransitionViewController.h */,
 				C5143A151FF9BBB700C16EB5 /* CATransitionViewController.m */,
+				C5DE784B248E37E300285A62 /* TestViewController.h */,
+				C5DE784C248E37E300285A62 /* TestViewController.m */,
 				C5143A161FF9BBB700C16EB5 /* RootViewController.h */,
 				C5143A171FF9BBB700C16EB5 /* RootViewController.m */,
 			);
@@ -3074,6 +3073,23 @@
 				C5B318432086EFE200208F09 /* AnimationBeforeflowerView.m */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		C5DE784A248E362D00285A62 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				C51435791FF9B9B600C16EB5 /* AppDelegate.h */,
+				C514357A1FF9B9B600C16EB5 /* AppDelegate.m */,
+				C514357C1FF9B9B600C16EB5 /* ViewController.h */,
+				C514357D1FF9B9B600C16EB5 /* ViewController.m */,
+				C514357F1FF9B9B600C16EB5 /* Main.storyboard */,
+				C59F0AC82086EEB300BC7065 /* image */,
+				C51435821FF9B9B600C16EB5 /* Assets.xcassets */,
+				C51435841FF9B9B600C16EB5 /* LaunchScreen.storyboard */,
+				C51435871FF9B9B600C16EB5 /* Info.plist */,
+				C51435881FF9B9B600C16EB5 /* main.m */,
+			);
+			path = Default;
 			sourceTree = "<group>";
 		};
 		DAC73FF71BC822377847217C /* Pods */ = {
@@ -3837,6 +3853,7 @@
 				C5143CA71FF9BBB900C16EB5 /* necklace45.png in Resources */,
 				C5143C471FF9BBB900C16EB5 /* merryChristmas_one_firework3.png in Resources */,
 				C5143C9C1FF9BBB900C16EB5 /* necklace35.png in Resources */,
+				C5DE784F248E392100285A62 /* README.md in Resources */,
 				C5143A921FF9BBB800C16EB5 /* cream_img38.png in Resources */,
 				C5143CCE1FF9BBB900C16EB5 /* necklace80.png in Resources */,
 				C5143CA81FF9BBB900C16EB5 /* necklace46.png in Resources */,
@@ -4130,6 +4147,7 @@
 				C5143DD01FF9BBBA00C16EB5 /* NecklaceView.m in Sources */,
 				C5143DD41FF9BBBA00C16EB5 /* CATransitionViewController.m in Sources */,
 				C5143DD31FF9BBBA00C16EB5 /* AnimationsViewController.m in Sources */,
+				C5DE784D248E37E300285A62 /* TestViewController.m in Sources */,
 				C5143DCC1FF9BBBA00C16EB5 /* AnimationRingView.m in Sources */,
 				C5143A1C1FF9BBB700C16EB5 /* AnimationModel.m in Sources */,
 				C5143DC81FF9BBBA00C16EB5 /* AnimationMerryChristmasView.m in Sources */,
@@ -4278,7 +4296,7 @@
 				CURRENT_PROJECT_VERSION = 2.3.0;
 				DEVELOPMENT_TEAM = M98VYFZASK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Gift_Animations/PrefixHeader.pch";
-				INFOPLIST_FILE = Gift_Animations/Info.plist;
+				INFOPLIST_FILE = Gift_Animations/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.3.0;
@@ -4299,7 +4317,7 @@
 				CURRENT_PROJECT_VERSION = 2.3.0;
 				DEVELOPMENT_TEAM = M98VYFZASK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Gift_Animations/PrefixHeader.pch";
-				INFOPLIST_FILE = Gift_Animations/Info.plist;
+				INFOPLIST_FILE = Gift_Animations/Default/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.3.0;
